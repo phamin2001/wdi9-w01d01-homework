@@ -1,149 +1,116 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
-{\fonttbl\f0\fnil\fcharset0 Menlo-Bold;\f1\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\csgray\c0\c0;}
-\margl1440\margr1440\vieww16200\viewh8400\viewkind0
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+Setup:
 
-\f0\b\fs24 \cf2 \cb3 \CocoaLigature0 Setup:
-\f1\b0 \
-\
-mkdir homework\
-mkdir homework/homework_part_1\
-touch command.txt\
-\
-===============================\
+mkdir homework
+mkdir homework/homework_part_1
+touch command.txt
 
-\f0\b Part I: Set the Scene\
-\
+===============================
+Part I: Set the Scene
 
-\f1\b0 1:\
-mkdir death_star\
-touch death_star/darth_vader.txt\
-touch death_star/princess_leia.txt death_star/storm_trooper.txt\
-\
-2:\
-mkdir galaxy_far_far_away\
-mkdir galaxy_far_far_away/tatooine\
-touch galaxy_far_far_away/tatooine/luke.txt galaxy_far_far_away/tatooine/ben_kenobi.txt\
-\
-3:\
-mkdir galaxy_far_far_away/tatooine/millenium_falcon\
-touch galaxy_far_far_away/tatooine/millenium_falcon/has_solo.txt\
-touch galaxy_far_far_away/tatooine/millenium_falcon/chewbaca.txt\
-\
-===============================\
+1:
+mkdir death_star
+touch death_star/darth_vader.txt
+touch death_star/princess_leia.txt death_star/storm_trooper.txt
 
-\f0\b Part II: mv - rename\
-\
+2:
+mkdir galaxy_far_far_away
+mkdir galaxy_far_far_away/tatooine
+touch galaxy_far_far_away/tatooine/luke.txt galaxy_far_far_away/tatooine/ben_kenobi.txt
 
-\f1\b0 4:\
+3:
+mkdir galaxy_far_far_away/tatooine/millenium_falcon
+touch galaxy_far_far_away/tatooine/millenium_falcon/has_solo.txt
+touch galaxy_far_far_away/tatooine/millenium_falcon/chewbaca.txt
+
+===============================
+Part II: mv - rename
+
+4:
 /Homework 1$ mv galaxy_far_far_away/tatooine/ben_kenobi.txt galaxy_far_far_away/tatooine/obi_wan.txt
-\f0\b \
-\
-================================\
-Part III: cp - copy\
-\
 
-\f1\b0 5:
-\f0\b \
+================================
+Part III: cp - copy
 
-\f1\b0 cp death_star/storm_trooper.txt galaxy_far_far_away/tatooine/\
-\
-================================\
+5:
+cp death_star/storm_trooper.txt galaxy_far_far_away/tatooine/
 
-\f0\b Part IV: mv - move\
-\
+================================
+Part IV: mv - move
 
-\f1\b0 6:
-\f0\b \
+6:
+mv galaxy_far_far_away/tatooine/luke.txt galaxy_far_far_away/tatooine/millenium_falcon/
+mv galaxy_far_far_away/tatooine/obi_wan.txt galaxy_far_far_away/tatooine/millenium_falcon/
 
-\f1\b0 mv galaxy_far_far_away/tatooine/luke.txt galaxy_far_far_away/tatooine/millenium_falcon/\
-mv galaxy_far_far_away/tatooine/obi_wan.txt galaxy_far_far_away/tatooine/millenium_falcon/\
-\
-7:\
-mv galaxy_far_far_away/tatooine/millenium_falcon/ galaxy_far_far_away/\
-\
-8:\
-mv galaxy_far_far_away/millenium_falcon/ death_star/\
-\
-9:\
-mv death_star/princess_leia.txt death_star/millenium_falcon/\
-\
-=========================================\
+7:
+mv galaxy_far_far_away/tatooine/millenium_falcon/ galaxy_far_far_away/
 
-\f0\b Part V: remove - remove\
-\
+8:
+mv galaxy_far_far_away/millenium_falcon/ death_star/
 
-\f1\b0 10:
-\f0\b \
+9:
+mv death_star/princess_leia.txt death_star/millenium_falcon/
 
-\f1\b0 rm death_star/millenium_falcon/obi_wan.txt 
-\f0\b \
+=========================================
+Part V: remove - remove
 
-\f1\b0 \
-===========================================\
+10:
+rm death_star/millenium_falcon/obi_wan.txt 
 
-\f0\b Part VI: all together\
-\
+===========================================
+Part VI: all together
 
-\f1\b0 11:\
-mkdir galaxy_far_far_away/yavin_4\
-\
-12:\
-mv death_star/millenium_falcon/ galaxy_far_far_away/yavin_4/\
-\
-13:\
-mkdir galaxy_far_far_away/yavin_4/x_wing\
-\
-14:\
-mv galaxy_far_far_away/yavin_4/millenium_falcon/princess_leia.txt galaxy_far_far_away/yavin_4/\
-mv galaxy_far_far_away/yavin_4/millenium_falcon/luke.txt galaxy_far_far_away/yavin_4/x_wing/\
-\
-15:\
-mv galaxy_far_far_away/yavin_4/millenium_falcon/ galaxy_far_far_away/\
-mv galaxy_far_far_away/yavin_4/x_wing/ galaxy_far_far_away/\
-\
-16:\
-mkdir death_star/tie_fighter_1\
-mkdir death_star/tie_fighter_2\
-mkdir death_star/tie_fighter_3\
-\
-17:\
-mv death_star/darth_vader.txt death_star/tie_fighter_1\
-\
-18:\
-cp death_star/storm_trooper.txt death_star/tie_fighter_2\
-cp death_star/storm_trooper.txt death_star/tie_fighter_3\
-\
-19:\
-mv death_star/tie_fighter_1 galaxy_far_far_away/\
-mv death_star/tie_fighter_2 galaxy_far_far_away/\
-mv death_star/tie_fighter_3 galaxy_far_far_away/\
-\
-=======================================\
+11:
+mkdir galaxy_far_far_away/yavin_4
 
-\f0\b Part VIII: \
-\
+12:
+mv death_star/millenium_falcon/ galaxy_far_far_away/yavin_4/
 
-\f1\b0 20:\
-rm -r galaxy_far_far_away/tie_fighter_2\
-rm -r galaxy_far_far_away/tie_fighter_3\
-\
-=====================================\
+13:
+mkdir galaxy_far_far_away/yavin_4/x_wing
 
-\f0\b Part VIII:\
-\
+14:
+mv galaxy_far_far_away/yavin_4/millenium_falcon/princess_leia.txt galaxy_far_far_away/yavin_4/
+mv galaxy_far_far_away/yavin_4/millenium_falcon/luke.txt galaxy_far_far_away/yavin_4/x_wing/
 
-\f1\b0 21:\
- touch galaxy_far_far_away/x_wing/the_force.txt\
-\
-22:\
-rm -r death_star/\
-\
-23:\
-mv galaxy_far_far_away/x_wing/ galaxy_far_far_away/yavin_4/\
-mv galaxy_far_far_away/millenium_falcon/ galaxy_far_far_away/yavin_4/\
-\
-\
-}
+15:
+mv galaxy_far_far_away/yavin_4/millenium_falcon/ galaxy_far_far_away/
+mv galaxy_far_far_away/yavin_4/x_wing/ galaxy_far_far_away/
+
+16:
+mkdir death_star/tie_fighter_1
+mkdir death_star/tie_fighter_2
+mkdir death_star/tie_fighter_3
+
+17:
+mv death_star/darth_vader.txt death_star/tie_fighter_1
+
+18:
+cp death_star/storm_trooper.txt death_star/tie_fighter_2
+cp death_star/storm_trooper.txt death_star/tie_fighter_3
+
+19:
+mv death_star/tie_fighter_1 galaxy_far_far_away/
+mv death_star/tie_fighter_2 galaxy_far_far_away/
+mv death_star/tie_fighter_3 galaxy_far_far_away/
+
+=======================================
+Part VIII: 
+
+20:
+rm -r galaxy_far_far_away/tie_fighter_2
+rm -r galaxy_far_far_away/tie_fighter_3
+
+=====================================
+Part VIII:
+
+21:
+ touch galaxy_far_far_away/x_wing/the_force.txt
+
+22:
+rm -r death_star/
+
+23:
+mv galaxy_far_far_away/x_wing/ galaxy_far_far_away/yavin_4/
+mv galaxy_far_far_away/millenium_falcon/ galaxy_far_far_away/yavin_4/
+
+
